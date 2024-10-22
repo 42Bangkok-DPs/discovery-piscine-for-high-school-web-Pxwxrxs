@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Boxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0; <* Optional background color /
+        }
+        table {
+            width: 100%; / Full width table /
+            border-collapse: collapse; / Remove spacing between cells /
+        }
+        td {
+            width: 50%; / Each cell takes half the width /
+            height: 200px; / Fixed height for the boxes /
+            text-align: center; / Center text /
+            vertical-align: middle; / Center text vertically /
+            color: white; / Text color /
+            font-size: 24px; / Font size /
+        }
+        .box1 {
+            background-color: #4CAF50; /* green */
+        }
+        .box2 {
+            background-color: #FF5733; /* Red */
+        }
+    </style>
+</head>
+<body>
+    <h1>football OR basketball</h1>
+    <table>
+        <tr>
+            <td class="box1">FOOTBALL</td>
+            <td class="box2">BASKETBALL</td>
+        </tr>
+    </table>
+</body>
+</html>
