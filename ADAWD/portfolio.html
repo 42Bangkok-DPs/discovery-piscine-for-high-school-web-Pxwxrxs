@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: "Oswald", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #e8dda6;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 60px 20px;
+            margin-top: 50px;
+        }
+        .active {
+            display: block; /* Show only the active section */
+        }
+        .section-header {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="active">
+        <h2 class="section-header">About Me</h2>
+        <img src="https://cdn.discordapp.com/attachments/914481727634821121/1298467379424137268/IMG_5695.jpg?ex=6719ab7b&is=671859fb&hm=7de9936cbccf4c7573630b47fb941a4cf65eb02df94b1e0fdb307c6a19f67ed5&" alt="Your Photo" width="170">
+        <img src="https://cdn.discordapp.com/attachments/1298486738867716096/1298487039402180608/IMG_9318.png?ex=6719bdca&is=67186c4a&hm=c1c0bdb884e3fc7908a24ee7c8c9f75bdbaad8cddb23e5b00b1c7b805a1a01a9&" alt="Your Photo" width="170">
+        <h3>Your Name(1)<h3>
+        <h3></h3> full name : pawares sareewong<h3></h3>
+        </h3> nick name : fast</h3>
+        <p>Job Title:student</p>
+        
+        <h3>Your Name(2)<h3>
+        <h3></h3> full name :Rapeephat Sagulrukpukdee<h3></h3>
+        </h3> nick name :Pete </h3>
+        <p>Job Title:student</p>
+            
+    </section>
+
+    <section id="experience">
+        <h2 class="section-header">Professional Experience</h2>
+        <h2>-</h2>
+
+
+        <h3>Skills(1)</h3>
+        <ul>
+            <li>foot ball</li>
+            <li>game</li>
+            <li>talk</li>
+            <h3>Skills(2)</h3>
+        <ul>
+            <li>football</li>
+            <li>coding</li>
+            <li>sport</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-header">Contact Me</h2>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email(1): <a href="mailto:your-email@example.com">pawares.fs@gmail.com</a></li>
+            <li>Line ID(1): <a href="https://linkedin.com/in/yourprofile">pawares_fs</a></li>
+            <li>Email(2): <a href="mailto:your-email@example.com">rapeephat.peet@gmail.com</a></li>
+            <li>Line ID(2): <a href="https://linkedin.com/in/yourprofile">0922502175</a></li>
+        </ul>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
